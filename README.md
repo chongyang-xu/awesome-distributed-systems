@@ -40,6 +40,21 @@ Paraphrasing @fogus from their [blog](http://blog.fogus.me/2011/09/08/10-technic
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](http://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying), a somewhat long read, but covers brilliantly on logs, which are at the heart of most distributed systems
 - [Kafka: a Distributed Messaging System for Log Processing](http://notes.stephenholiday.com/Kafka.pdf)
 
+### Computing systems
+- [MapReduce: simplified data processing on large clusters](http://nil.csail.mit.edu/6.824/2017/papers/mapreduce.pdf) MapReduce-OSDI2004
+- [Dryad: Distributed Data-parallel Programs from Sequential Building Blocks](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/03/eurosys07.pdf) Dryad-EuroSys2007
+- [Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf) Spark-NSDI2012
+ - [Pregel: A System for Large-Scale Graph Processing](https://dl.acm.org/citation.cfm?id=1807184) Pregel-Sigmod10
+ - [GraphLab: A New Framework For Parallel Machine Learning](https://arxiv.org/abs/1006.4990?context=cs) arxiv-2010
+ - [GraphChi: Large-Scale Graph Computation on Just a PC](https://www.usenix.org/system/files/conference/osdi12/osdi12-final-126.pdf)   GraphChi-OSDII12
+ - [Distributed GraphLab: A Framework for Machine Learning and Data Mining in the Cloud](http://vldb.org/pvldb/vol5/p716_yuchenglow_vldb2012.pdf) GraphLab VLDB-2012
+ - [PowerGraph: distributed graph-parallel computation on natural graph](https://www.usenix.org/node/170825) PowerGraph-OSDI2012
+ - [Gemini: A Computation-Centric Distributed Graph Processing System](https://www.usenix.org/system/files/conference/osdi16/osdi16-zhu.pdf) OSDI-2016
+ - [Naiad: A Timely Dataflow System](http://sigops.org/sosp/sosp13/papers/p439-murray.pdf) Naiad-SOSP2013
+ - [TensorFlow: A System for Large-Scale Machine Learning](https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf) Tensorflow-OSDI2016
+ - [Scaling Distributed Machine Learning with the Parameter Server](https://www.cs.cmu.edu/~muli/file/parameter_server_osdi14.pdf) PS-OSDI-2014
+ - [Streaming]
+
 ### Distributed Consensus and Fault-Tolerance
 - [Practicle Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)
 - [The Byzantine Generals Problem](http://bnrg.cs.berkeley.edu/~adj/cs16x/hand-outs/Original_Byzantine.pdf)
@@ -53,6 +68,7 @@ Paraphrasing @fogus from their [blog](http://blog.fogus.me/2011/09/08/10-technic
 ### Testing, monitoring and tracing
 While designing distributed systems are hard enough, testing them is even harder. 
 - [Dapper](http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf), Google's large scale distributed-systems tracing infrastructure, this was also the basis for the design of open source projects such as [Zipkin](http://zipkin.io/), [Pinpoint](https://github.com/naver/pinpoint) and [HTrace](http://htrace.incubator.apache.org/).
+- [MISC Tool CMU-15-712](https://www.cs.cmu.edu/~15712/project.html)
 
 ### Programming Models
 - [Distributed Programming Model](http://web.cs.ucdavis.edu/~pandey/Research/Papers/icdcs01.pdf)
@@ -64,12 +80,19 @@ While designing distributed systems are hard enough, testing them is even harder
 - [Jepsen](https://github.com/jepsen-io/jepsen) A framework for distributed systems verification, with fault injection
   @aphyr has featured enough times in this list already, but Jepsen and the blog posts that go with are a quintessntial addition to any distributed systems reading list.
 - [Verdi](http://verdi.uwplse.org/) A Framework for Implementing and Formally Verifying Distributed Systems [Paper](http://verdi.uwplse.org/verdi.pdf)
+- [TLA: Byzantine Paxos - YouTube](https://www.youtube.com/watch?v=XnfAZHkyOy4)
+- [Formal Language and Automata-UCI](https://www.ics.uci.edu/~goodrich/teach/cs162/notes/)
+- [Formal Language and Automata-CMU](https://www.cs.cmu.edu/~fp/courses/flac/schedule.html)
+- [Formal Language and Automata-Stanford](http://infolab.stanford.edu/~ullman/ialc.html)
 
 ## Courses
 - [Reliable Distributed Algorithms, Part 1](https://www.edx.org/course/reliable-distributed-algorithms-part-1-kthx-id2203-1x-0), KTH Sweden
 - [Reliable Distributed Algorithms, Part 2](https://www.edx.org/course/reliable-distributed-algorithms-part-2-kthx-id2203-2x), KTH Sweden
-- [Cloud Computing Concepts](https://class.coursera.org/cloudcomputing-001), University of Illinois
-- [CMU: Distributed Systems](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html) in Go Programming Language
+- [Cloud Computing Concepts](https://www.coursera.org/specializations/cloud-computing), University of Illinois
+- [CMU: Distributed Systems 15-440-F12](http://www.cs.cmu.edu/~dga/15-440/F12/syllabus.html) in Go Programming Language
+- [CMU: Distributed Systems 15-440-S14](http://www.cs.cmu.edu/~dga/15-440/S14/) in Go Programming Language
+- [CMU: Advanced and Distributed Operating Systems 15-712](https://www.cs.cmu.edu/~15712/index.html)
+- [MIT: Distributed Systems 6.824-S17](http://nil.csail.mit.edu/6.824/2017/schedule.html)
 - [Software Defined Networking](https://www.coursera.org/course/sdn) , Georgia Tech.
 - [ETH Zurich: Distributed Systems](http://dcg.ethz.ch/lectures/podc_allstars/)
 - [ETH Zurich: Distributed Systems Part 2](http://dcg.ethz.ch/lectures/distsys), covers  Distributed control algorithms, communication models, fault-tolerance among other things. In particular fault tolerence issues (models, consensus, agreement) and replication issues (2PC,3PC, Paxos), which are critical in understanding distributed systems are explained in great detail.
